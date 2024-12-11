@@ -33,3 +33,46 @@ To run this project, ensure you have the following installed:
 
    ```bash
    gcc -o server server.c -lws2_32
+
+### Client
+
+1. Open a terminal/command prompt.
+2. Compile the client.c file:
+
+   ```bash
+   gcc -o client client.c -lws2_32 -lpthread
+
+   
+2. Run the Server
+Execute the server program:
+
+   ```bash
+   ./server
+   
+The server will listen on port 8080 for incoming connections.
+
+3. Run the Client
+Execute the client program:
+
+   ```bash
+   ./client
+   
+- Enter the server's IP address (10.26.244.62) when prompted.
+- Enter your username and start chatting.
+- 
+### Notes
+
+- Ensure the server and clients are on the same network.
+- The server listens on PORT 8080 by default; you can modify this in the source code if needed.
+- The maximum number of clients is 10. This limit can be increased by changing the MAX_CLIENTS constant in server.c.
+  
+- Contributing
+- Feel free to submit issues or pull requests to improve this project.
+
+License
+This project is open-source and licensed under the MIT License.   
+
+
+
+
+     
